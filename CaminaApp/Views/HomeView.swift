@@ -372,9 +372,9 @@ struct PopularNearbyView: View {
     let restaurants: [Restaurant] = [
         Restaurant(image: Image("restaurant1"), name: "Santoua", distance: "12 min", calories: "450 kcal"),
         Restaurant(image: Image("restaurant2"), name: "Cus Cus Cus", distance: "8 min", calories: "520 kcal"),
-        Restaurant(image: Image("restaurant3"), name: "Green Garden", distance: "18 min", calories: "370 kcal"),
-        Restaurant(image: Image("restaurant4"), name: "Pizza Urbana", distance: "21 mn", calories: "900 kcal"),
-        Restaurant(image: Image("restaurant5"), name: "Ramen House", distance: "9 min", calories: "610 kcal")
+        Restaurant(image: Image("cemita1"), name: "Green Garden", distance: "18 min", calories: "370 kcal"),
+        Restaurant(image: Image("molote1"), name: "Pizza Urbana", distance: "21 mn", calories: "900 kcal"),
+        Restaurant(image: Image("chilaquiles1"), name: "Ramen House", distance: "9 min", calories: "610 kcal")
     ]
 
     var body: some View {

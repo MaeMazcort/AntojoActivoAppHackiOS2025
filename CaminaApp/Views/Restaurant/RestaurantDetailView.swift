@@ -54,7 +54,6 @@ struct RestaurantDetailView: View {
                         .cornerRadius(10)
                         .shadow(color: .primaryGreen.opacity(0.1), radius: 4, x: 0, y: 2)
 
-                        // ✅ Reemplazamos el estado con un NavigationLink directo
                         NavigationLink(destination: TripInProgressView(menu: restaurant.menu, destinationName: restaurant.name)) {
                             HStack {
                                 Image(systemName: "location.circle.fill")
