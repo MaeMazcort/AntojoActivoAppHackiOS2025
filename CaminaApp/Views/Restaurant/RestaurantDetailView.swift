@@ -35,6 +35,8 @@ struct RestaurantDetailView: View {
                     }
                     .padding(.horizontal)
 
+                    RestaurantMenuView(menu: restaurant.menu)
+                    
                     VStack(alignment: .leading, spacing: 12) {
                         Text("How to go?")
                             .font(.title2.bold())
