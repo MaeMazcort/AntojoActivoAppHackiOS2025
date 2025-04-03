@@ -421,6 +421,7 @@ struct PopularNearbyView: View {
             }
         }
         .padding(.vertical, 8)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

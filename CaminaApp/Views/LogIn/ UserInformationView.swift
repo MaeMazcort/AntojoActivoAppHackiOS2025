@@ -19,14 +19,14 @@ struct UserInformationView: View {
             Color(.systemBackground)
                 .edgesIgnoringSafeArea(.all)
             
-            VStack(spacing: 40) {
+            VStack(spacing: 50) {
                 Text("Complete Your Profile")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.primaryGreen)
                     .padding(.top, 40)
                 
-                VStack(spacing: 20) {
+                VStack(spacing: 25) {
                     FormNumberField(label: "Age (years)", text: $age)
                     FormNumberField(label: "Height (meters)", text: $height)
                     FormNumberField(label: "Weight (kg)", text: $weight)
@@ -148,10 +148,6 @@ struct FormNumberField: View {
                 .padding()
                 .background(Color(.secondarySystemBackground))
                 .cornerRadius(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.primaryGreen, lineWidth: 1)
-                )
                 .onChange(of: text) { newValue in
                     // Filter non-numeric characters and allow single decimal point
                     let filtered = newValue.filter { "0123456789.".contains($0) }
@@ -187,5 +183,3 @@ struct UserInformationView_Previews: PreviewProvider {
         UserInformationView()
     }
 }
-
-

@@ -80,8 +80,10 @@ struct TripInProgressView: View {
                     .padding(.horizontal)
                 }
             }
+            .navigationBarBackButtonHidden(true)
             .accentColor(Color.primaryGreen)
         }
+        .navigationBarBackButtonHidden(true)
     }
 
     private func startAnimatingDots() {

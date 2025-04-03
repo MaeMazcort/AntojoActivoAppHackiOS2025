@@ -108,6 +108,7 @@ struct TripSummaryView: View {
         .padding()
         .background(Color.white.edgesIgnoringSafeArea(.all))
         .navigationTitle("Trip Stats")
+        .navigationBarBackButtonHidden(true)
         .accentColor(Color.primaryGreen)
     }
     func shareTrip() {
